@@ -1,1 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*****************************************************************/
+
+html{
+    font-size: 62.5%;
+    --main-color: #06a7e7;
+    --grey: #dde9f8;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 200px 740px;
+}
+
+h1, h2, h3, h4, h5, li, label {
+    font-family: Optima, sans-serif;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h1, li{
+    color: white;
+}
+
+li, h2, h3, label{
+    font-size: 2rem;
+    margin: 10px;
+}
+
+h4{
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+h5{
+    opacity: 0.5;
+    font-size: 1.5rem;
+}
+
+li{
+    margin: 20px;
+}
+
+li:hover{
+    margin-left: 40px;
+}
+
+.gras {
+    font-weight: 800;
+}
+
+.transparent{
+    opacity: 0.5;
+}
+
+.smallImg{
+    width : 40px;
+    height: auto;
+    margin: 5px;
+    margin-left: 20px;
+}
+
+.moyImg{
+    width : 70px;
+    height: auto;
+    margin: 5px;
+}
+
+.sidebar{
+    background-color: var(--main-color);
+    grid-row: span 2;
+}
+
+.sidebar > div{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logoSidebar{
+    width:60px;
+    height: auto;
+    margin-right: 13px;
+}
+
+.header{
+ background-color: white;
+ padding:30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ box-shadow: 0px 1px 6px grey;
+ z-index: 2;
+}
+
+.headerLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLine > div{
+    align-items: center;
+}
+
+.header > div > div{
+    display: flex;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 15px;
+    background-color: var(--grey);
+}
+
+button{
+    margin: 0px 10px;
+    width: 90px;
+    height: 35px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 16px;
+    border: none;
+}
+
+button:hover, input:hover{
+    box-shadow: 1px 1px 6px grey;
+    
+}
+
+.content{
+    background-color: var(--grey);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.project{
+    grid-row: span 2;
+}
+
+.project, .annoncement, .trending{
+    padding: 20px;
+}
+
+
+.project > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(1fr, 400px));
+    align-items: stretch;
+    gap: 25px;
+}
+
+.project > div > .items{
+    border-left: solid 7px;
+    border-left-color: #ffb93a;
+
+}
+
+.items{
+    padding: 23px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px grey;
+}
+
+.items > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+h4.gras{
+    align-self: flex-start;
+}
+
+.line{
+    background-color: black;
+    opacity: 0.3;
+    width: 95%;
+    height: 1.2px;
+    align-self: center;
+    margin: 20px;
+}
+
+.annoncement > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
