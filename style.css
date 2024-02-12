@@ -111,6 +111,10 @@ li:hover{
     margin-left: 20px;
 }
 
+.smaller{
+    width: 23px;
+}
+
 .moyImg{
     width : 70px;
     height: auto;
